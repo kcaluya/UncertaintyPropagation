@@ -26,6 +26,13 @@ The third figure compares the analytical variance with the numerical variance.
 The last figure plots the transients in one plot. 
 ![1DLinearSystem](Figs/TransientPlot.jpg)
 
+## Required Inputs from the User:
 
+All parameters are dimensionless. 
 
+1. *dim**: spatial dimension of the system of interest. In this case, input should be  either 1 or 2.  
+
+    ```matlab
+    dim = 1
+    ```
 
