@@ -30,9 +30,12 @@ The last figure plots the transients in one plot.
 
 All parameters are dimensionless. 
 
-1. *dim**: spatial dimension of the system of interest. In this case, input should be  either 1 or 2.  
+1. *dim*: spatial dimension of the system of interest. In this case, input should be  either 1 or 2.  
 
     ```matlab
     dim = 1
     ```
-
+ 2. *beta*: diffusion coefficient. 
+ 
+ 3. *nSample*: number of point clouds.
+ 4. *alpha*: drift coefficient 
