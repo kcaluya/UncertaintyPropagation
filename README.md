@@ -52,9 +52,15 @@ All parameters are dimensionless.
     alpha = 1
     ```
  5. *epsilon*: The regularization coefficient which "smooths" out the solutions. Suggested values are 
- *epsilon* = 0.001-0.1 range. If chosen too big, the plots will under match. If chosen too small, the plots will be grainy.
+ *epsilon* = 0.001-0.1 range depending on the other parameters above.
  
  ```matlab 
     epsilon = .01
     ```
  Here is an example of *epsilon* chosen to be too small.   
+ 
+ ![1DEpsSmall](Figs/ExEps0005.jpg)
+ 
+  Here is an example of *epsilon* chosen to be too big.   
+ 
+ ![1DEpsBig](Figs/ExEps01.jpg)
