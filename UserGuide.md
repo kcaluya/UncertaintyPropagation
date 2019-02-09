@@ -1,30 +1,4 @@
-<!-- ---
-header-includes:
-  - \usepackage{amsmath, amssymb, graphicx, fullpage, color, subfigure, wrapfig, epstopdf, diagbox}
-  - \newcommand{\real}{\mathbb{R}}
-  - \newcommand{\ith}[1]{#1^{\text{th}}}
-  - \newcommand{\vo}[1]{\boldsymbol{#1}}
-  - \newcommand{\Rq}{\vo{R}_{\vo{q}}}
 
-  - \newcommand{\comment}[1]{\textcolor{red}{#1}}
-  - \newcommand{\bcg}{\bar{\vo{b}}_k}
-  - \newcommand{\bcgd}{\dot{\bar{\vo{b}}}_k}
-  - \newcommand{\bcgdd}{\ddot{\bar{\vo{b}}}_k}
-
-  - \newcommand{\bv}{\vo{b}_k}
-  - \newcommand{\bvd}{\dot{\vo{b}}_k}
-  - \newcommand{\bvdd}{\ddot{\vo{b}}_k}
-
-  - \newcommand{\q}{\vo{q}}
-  - \newcommand{\qd}{\dot{\q}}
-
-  - \newcommand{\eqnlabel}[1]{\label{eqn:#1}}
-  - \newcommand{\eqn}[1]{(\ref{eqn:#1})}
-  - \renewcommand{\vec}[1]{\boldsymbol{\mathsf{vec}}\left({#1}\right)}
-
-
----
--->
 # User Guide
 
 ## Introduction 
