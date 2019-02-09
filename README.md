@@ -39,28 +39,28 @@ All parameters are dimensionless.
   
   ```matlab
     beta  = 1
-    ```
+  ```
  
  3. *nSample*: The number of PDF point values to be plotted. Typical values for good visualization should be chosen to be in 200-500 range. In the example above, we choose *nSample* = 400.
  
   ```matlab 
     nSample = 400 
-    ```
+  ```
  4. *alpha*: The drift coefficient which determines the strength of the drift or the deterministic part of the system.
  
  ```matlab 
     alpha = 1
-    ```
+  ```
  5. *epsilon*: The regularization coefficient which "smooths" out the solutions. Suggested values are 
  *epsilon* = 0.001-0.1 range depending on the other parameters above.
  
  ```matlab 
     epsilon = .01
-    ```
- Here is an example of *epsilon* chosen to be too small.   
+ ```
+Here is an example of *epsilon* chosen to be too small.   
  
- ![1DEpsSmall](Figs/ExEps0005.jpg)
+![1DEpsSmall](Figs/ExEps0005.jpg)
  
-  Here is an example of *epsilon* chosen to be too big.   
+ Here is an example of *epsilon* chosen to be too big.   
  
  ![1DEpsBig](Figs/ExEps01.jpg)
