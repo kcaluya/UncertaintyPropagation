@@ -29,7 +29,7 @@ The last figure plots the transients in one plot.
 
 Here are sample plots of 2D Gradient Nonlinear system.
 
-![2DNonLinear](Figs/Ex2Dsystem.jpg)
+![2DNonLinear](Figs/Ex2DSystem.jpg)
 
 ## Required Inputs from the User:
 
