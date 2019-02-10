@@ -77,5 +77,17 @@ Here is an example of *epsilon* chosen to be too small.
      t_initial = 0;                                      
      t_final = 4 ;
    ```
+  8. *x0*: A *(nSample x dim)* matrix of initial position values. For 1D Ornstein-Uhlenbeck case, the *(nSample x dim)* vector *x0* must be normally distributed and can be generated as follows: 
+  
+  ```matlab
+   mean0 = 5 	% initial mean
+   
+   sigma0 =  .2     % initial standard deviation
+ 
+   x0 = normrnd(mean0,sigma0,nSample,dim) % generates initial values 
+ ```
+  
+  
+ 8. *rho_0*: An *(nSample x dim)* vector of initial PDF values. For the 1D case, *rho_0* must be normally distributed sample 
 
 
