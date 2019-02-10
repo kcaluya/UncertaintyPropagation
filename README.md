@@ -1,5 +1,5 @@
 
-#Summary
+# Summary
 
 We have developed a new variational framework to solve Partial Differential Equations (PDEs) that govern the flow of joint probability density functions of continuous time stochastic systems. This is a prototype solver for the Fokker-Planck-Kolmogorov PDE to simulate density propagation for  specialized 1D AND 2D systems. This new method breaks away from traditional function approximation and obviates spatial discretization.
 
