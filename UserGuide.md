@@ -4,18 +4,18 @@
 ## Introduction 
 
 This is a Fokker-Planck-Kolmogorov PDE solver for 1D Ornstein Uhlenbeck System and 
-a 2D Potential Nonlinear System.
+a 2D Gradient Nonlinear System.
 
-**NOTE**: This solver only supports the above systems currently. There is on-going work on applications to more general systems.
+**NOTE**: This solver only supports the above systems currently. There is on-going work on applications to a larger class of systems.
 
 
 ## Example:
 
 These are sample plots for a 1D system. The required inputs are explained below in further detail.
-The User is can go through the main executable file Main.m to see the entire file in detail and change some of the inputs and parameters.
+The User can go through the main executable file Main.m to see the entire file in detail and change some of the inputs and parameters.
 
  
-The first figure creates 6 subplots of the transient PDFs at different time specified by the user. 
+The first figure creates 6 subplots of the transient PDFs at different times specified by the user. 
 ![1DLinearSystem](Figs/Ex1DLinear.jpg)
 
 The second figure compares the analytical mean with the numerical mean.
@@ -62,11 +62,11 @@ Here is an example of *epsilon* chosen to be too small.
  
 ![1DEpsSmall](Figs/ExEps0005.jpg)
  
- Here is an example of *epsilon* chosen to be too big. 
+ Here is an example of *epsilon* chosen to be too large. 
  
  ![1DEpsBig](Figs/ExEps01.jpg)
  
- 6. *h*: Time step for underlying dynamics. 
+ 6. *h*: Timestep for underlying dynamics. 
 
   ```matlab 
     h = .001
@@ -92,10 +92,10 @@ Here is an example of *epsilon* chosen to be too small.
    ```matlab 
  rho_0 = normpdf(x0,mean0,sigma0) 			% generates initial value PDF
    ```
-**NOTE**: For convenience, in the  2D Nonlinear System, we can choose multivariate Gaussian sample points and PDF value. We can do this in MATLAB using the commands:
+**NOTE**: For convenience we choose multivariate normally distributed  sample points and PDF values for our 2D Gradient Nonlinear System. These can be done as  follows: 
 
    ```matlab 
- mean0 =  [2,2]	   		% initial mean vector
+ mean0 =  [2,2]	   	% initial mean vector
  
  sigma0 = 4*eye(dim) 	% initial covariance matrix 
  
