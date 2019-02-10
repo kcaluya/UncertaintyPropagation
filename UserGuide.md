@@ -36,7 +36,7 @@ All parameters are dimensionless.
     ```matlab
     dim = 1
     ```
- 2. *beta*: The diffusion coefficient which determines the strength of the noise/randomness added to the system
+ 2. *beta*: The diffusion coefficient which determines the strength of the noise/randomness added to the system.
   
   ```matlab
     beta  = 1
@@ -84,10 +84,21 @@ Here is an example of *epsilon* chosen to be too small.
    
    sigma0 =  .2     % initial standard deviation
  
-   x0 = normrnd(mean0,sigma0,nSample,dim) % generates initial values 
+   x0 = normrnd(mean0,sigma0,nSample,dim) % generates initial positions 
  ```
   
-  
- 8. *rho_0*: An *(nSample x dim)* vector of initial PDF values. For the 1D case, *rho_0* must be normally distributed sample 
+ 8. *rho_0*: An *(nSample x 1)* vector of initial PDF values. For the 1D case, *rho_0* must be normally distributed sample and can be generated from the previously generated position samples as follows: 
+ 
+   ```matlab 
+ rho_0 = normpdf(x0,mean0,sigma0) % generates initial value PDF
+   ```
+**NOTE**: For convenience, in the  2D Nonlinear System, we can choose multivariate Gaussian sample points and PDF value. We can do this in MATLAB using the commands:
 
+   ```matlab 
+ mean0 =  [2,2]	% initial mean vector
+ 
+ sigma0 = 4*eye(dim) % initial covariance matrix 
+ 
+ rho_0 = mvnpdf(x0, mean0,sigma0) % generates (nSample x 1) vector of PDF values 
+   ```
 
