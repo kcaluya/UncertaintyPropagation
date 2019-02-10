@@ -27,6 +27,10 @@ The third figure compares the analytical variance with the numerical variance.
 The last figure plots the transients in one plot. 
 ![1Dtransient](Figs/TransientPlot.jpg)
 
+Here are sample plots of 2D Gradient Nonlinear system.
+
+![2DNonLinear](Figs/Ex2Dsystem.jpg)
+
 ## Required Inputs from the User:
 
 All parameters are dimensionless. 
