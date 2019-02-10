@@ -80,25 +80,25 @@ Here is an example of *epsilon* chosen to be too small.
   8. *x0*: A *(nSample x dim)* matrix of initial position values. For 1D Ornstein-Uhlenbeck case, the *(nSample x dim)* vector *x0* must be normally distributed and can be generated as follows: 
   
   ```matlab
-   mean0 = 5 	% initial mean
+   mean0 = 5 		% initial mean
    
-   sigma0 =  .2     % initial standard deviation
+   sigma0 =  .2     	% initial standard deviation
  
-   x0 = normrnd(mean0,sigma0,nSample,dim) % generates initial positions 
+   x0 = normrnd(mean0,sigma0,nSample,dim) 		% generates initial positions 
  ```
   
  8. *rho_0*: An *(nSample x 1)* vector of initial PDF values. For the 1D case, *rho_0* must be normally distributed sample and can be generated from the previously generated position samples as follows: 
  
    ```matlab 
- rho_0 = normpdf(x0,mean0,sigma0) % generates initial value PDF
+ rho_0 = normpdf(x0,mean0,sigma0) 			% generates initial value PDF
    ```
 **NOTE**: For convenience, in the  2D Nonlinear System, we can choose multivariate Gaussian sample points and PDF value. We can do this in MATLAB using the commands:
 
    ```matlab 
- mean0 =  [2,2]	% initial mean vector
+ mean0 =  [2,2]	   		% initial mean vector
  
- sigma0 = 4*eye(dim) % initial covariance matrix 
+ sigma0 = 4*eye(dim) 	% initial covariance matrix 
  
- rho_0 = mvnpdf(x0, mean0,sigma0) % generates (nSample x 1) vector of PDF values 
+ rho_0 = mvnpdf(x0, mean0,sigma0) 	% generates (nSample x 1) vector of PDF values 
    ```
 
