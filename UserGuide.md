@@ -3,11 +3,7 @@
 
 ## Introduction 
 
-This is a Fokker-Planck-Kolmogorov PDE solver for 1D Ornstein Uhlenbeck System and 
-a 2D Gradient Nonlinear System.
-
-**NOTE**: This solver only supports the above systems currently. There is on-going work on applications to a larger class of systems.
-
+The following 2 examples demonstrate solving the Fokker-Planck-Kolmogorov initial value problem for: (1) 1D Ornsten-Uhlenbeck, (2) 2D gradient nonlinear systems.
 
 ## Example:
 
